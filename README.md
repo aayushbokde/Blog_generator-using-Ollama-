@@ -24,31 +24,6 @@ Easily customize **topic, audience, word count, and tone**, and keep track of ge
 - **LLM Backend:** [Ollama](https://ollama.ai/) running **LLaMA 2** models locally  
 - **Language:** Python 3.9+  
 
----
-
-## 📂 Project Structure
-
-llama2_blog_app/
-│── app.py # Main Streamlit app
-│── history.json # Stores generated blog history
-│
-├── components/ # UI components
-│ ├── sidebar.py # Sidebar with config + history
-│ └── blog_display.py # Blog rendering UI
-│
-├── styles/
-│ └── custom_css.py # Custom CSS styling
-│
-├── utils/
-│ ├── ollama_helper.py # Function to call Ollama
-│ ├── prompts.py # Prompt builder
-│ └── history_utils.py # Save/load history
-│
-└── README.md
-
-
----
-
 ## 🚀 Installation & Setup
 
 ### 1️⃣ Clone the repository
@@ -62,20 +37,19 @@ pip install -r requirements.txt
 
 ```
 ### 3️⃣ Install Ollama
-```
+
 Download Ollama for your OS
 Pull the required LLaMA 2 models:
 ollama pull llama2:7b
 ollama pull llama2:13b   # optional
-```
+
 ### 4️⃣ Run the app
 ```
 streamlit run app.py
-
 ```
 ### 📖 Usage
 
-```
+
 Enter a blog topic (e.g., AI in Healthcare)
 
 Select the target audience (Researchers, Students, General Readers, etc.)
@@ -87,15 +61,15 @@ Click Generate Blog 🚀
 Blog appears in the UI with an option to download
 
 Sidebar shows your blog history
-```
+
 
 ### 🔮 Future Enhancements
 
-```
+
  Support PDF export
 
  Multi-language blog generation
-```
+
 ### 👨‍💻 Author
 
 ```
