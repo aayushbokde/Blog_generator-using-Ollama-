@@ -15,4 +15,8 @@ def render_blog(topic, content, audience, word_count, tone, history):
     st.markdown(content)
 
     # Download option
-    st.download_button("📥 Download Blog", data=content, file_name=f"blog_{topic.replace(' ', '_')}.txt")
+    st.download_button(
+        "📥 Download Blog",
+        data=content,
+        file_name=f"blog_{topic.replace(' ', '_')}.txt"
+    )
